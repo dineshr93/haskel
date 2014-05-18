@@ -16,3 +16,6 @@ mul n m = n*m
 length' xs = sum [1 | _ <- xs]  
 
 cutLow x = [c | c<-x, c `elem` ['A'..'Z']]
+
+
+pickEvens xxs=[[x|x<-xs,even x]|xs<-xxs]
