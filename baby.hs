@@ -14,3 +14,5 @@ mingle n m = [ x*y | x <- n, y <- m]
 mul n m = n*m
 
 length' xs = sum [1 | _ <- xs]  
+
+cutLow x = [c | c<-x, c `elem` ['A'..'Z']]
