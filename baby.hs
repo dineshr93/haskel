@@ -12,3 +12,5 @@ busGame n= [if (x`mod`5==0) then 0 else x | x <- n, x>0]
 mingle n m = [ x*y | x <- n, y <- m]  
 
 mul n m = n*m
+
+length' xs = sum [1 | _ <- xs]  
