@@ -1,0 +1,1 @@
+doubleSmallNumber x  = x*2

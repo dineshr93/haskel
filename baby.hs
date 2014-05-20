@@ -1,4 +1,7 @@
 doubleMe x = x + x
+
+doubleUs x y = doubleMe x + doubleMe y   
+
 doubleSmallNumber x = if x > 100  
                         then x  
                         else x*2  
@@ -19,3 +22,8 @@ cutLow x = [c | c<-x, c `elem` ['A'..'Z']]
 
 
 pickEvens xxs=[[x|x<-xs,even x]|xs<-xxs]
+
+
+factorial :: (Integral a) => a -> a  
+factorial 0 = 1  
+factorial n = n * factorial (n - 1)  
